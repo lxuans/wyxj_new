@@ -1,0 +1,1247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="iconfont.js"></script>
+
+    <style type="text/css">
+        .icon {
+          /* 通过设置 font-size 来改变图标大小 */
+          width: 1em; height: 1em;
+          /* 图标和文字相邻时，垂直对齐 */
+          vertical-align: -0.15em;
+          /* 通过设置 color 来改变 SVG 的颜色/fill */
+          fill: currentColor;
+          /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+             normalize.css 中也包含这行 */
+          overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>
+                    <div class="name">phone</div>
+                    <div class="fontclass">#icon-phone</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-logo"></use>
+                    </svg>
+                    <div class="name">logo</div>
+                    <div class="fontclass">#icon-logo</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-toolinfo"></use>
+                    </svg>
+                    <div class="name">tool_info</div>
+                    <div class="fontclass">#icon-toolinfo</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wechat"></use>
+                    </svg>
+                    <div class="name">wechat</div>
+                    <div class="fontclass">#icon-wechat</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wealbum_big"></use>
+                    </svg>
+                    <div class="name">wealbum_big</div>
+                    <div class="fontclass">#icon-wealbum_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-public_big"></use>
+                    </svg>
+                    <div class="name">public_big</div>
+                    <div class="fontclass">#icon-public_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-sort_big"></use>
+                    </svg>
+                    <div class="name">sort_big</div>
+                    <div class="fontclass">#icon-sort_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-more_big"></use>
+                    </svg>
+                    <div class="name">more_big</div>
+                    <div class="fontclass">#icon-more_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-lan"></use>
+                    </svg>
+                    <div class="name">lan</div>
+                    <div class="fontclass">#icon-lan</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tower"></use>
+                    </svg>
+                    <div class="name">tower</div>
+                    <div class="fontclass">#icon-tower</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-maximize"></use>
+                    </svg>
+                    <div class="name">maximize</div>
+                    <div class="fontclass">#icon-maximize</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-widowed"></use>
+                    </svg>
+                    <div class="name">widowed</div>
+                    <div class="fontclass">#icon-widowed</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                    <div class="name">close</div>
+                    <div class="fontclass">#icon-close</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-minimize"></use>
+                    </svg>
+                    <div class="name">minimize</div>
+                    <div class="fontclass">#icon-minimize</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-back"></use>
+                    </svg>
+                    <div class="name">back</div>
+                    <div class="fontclass">#icon-back</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-next"></use>
+                    </svg>
+                    <div class="name">next</div>
+                    <div class="fontclass">#icon-next</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                    <div class="name">search</div>
+                    <div class="fontclass">#icon-search</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-refresh"></use>
+                    </svg>
+                    <div class="name">refresh</div>
+                    <div class="fontclass">#icon-refresh</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-list_view"></use>
+                    </svg>
+                    <div class="name">list_view</div>
+                    <div class="fontclass">#icon-list_view</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-grid_view"></use>
+                    </svg>
+                    <div class="name">grid_view</div>
+                    <div class="fontclass">#icon-grid_view</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-public"></use>
+                    </svg>
+                    <div class="name">public</div>
+                    <div class="fontclass">#icon-public</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-download"></use>
+                    </svg>
+                    <div class="name">download</div>
+                    <div class="fontclass">#icon-download</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-upload"></use>
+                    </svg>
+                    <div class="name">upload</div>
+                    <div class="fontclass">#icon-upload</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-favorite"></use>
+                    </svg>
+                    <div class="name">favorite</div>
+                    <div class="fontclass">#icon-favorite</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-delete"></use>
+                    </svg>
+                    <div class="name">delete</div>
+                    <div class="fontclass">#icon-delete</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-regain"></use>
+                    </svg>
+                    <div class="name">regain</div>
+                    <div class="fontclass">#icon-regain</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-edit"></use>
+                    </svg>
+                    <div class="name">edit</div>
+                    <div class="fontclass">#icon-edit</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ignore"></use>
+                    </svg>
+                    <div class="name">ignore</div>
+                    <div class="fontclass">#icon-ignore</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-set_owner"></use>
+                    </svg>
+                    <div class="name">set_owner</div>
+                    <div class="fontclass">#icon-set_owner</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-remove_user"></use>
+                    </svg>
+                    <div class="name">remove_user</div>
+                    <div class="fontclass">#icon-remove_user</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-portrait_merge"></use>
+                    </svg>
+                    <div class="name">portrait_merge</div>
+                    <div class="fontclass">#icon-portrait_merge</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-clear"></use>
+                    </svg>
+                    <div class="name">clear</div>
+                    <div class="fontclass">#icon-clear</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-agree"></use>
+                    </svg>
+                    <div class="name">agree</div>
+                    <div class="fontclass">#icon-agree</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-reject"></use>
+                    </svg>
+                    <div class="name">reject</div>
+                    <div class="fontclass">#icon-reject</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tag"></use>
+                    </svg>
+                    <div class="name">tag</div>
+                    <div class="fontclass">#icon-tag</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-transfer_list"></use>
+                    </svg>
+                    <div class="name">transfer_list</div>
+                    <div class="fontclass">#icon-transfer_list</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-transmitting"></use>
+                    </svg>
+                    <div class="name">transmitting</div>
+                    <div class="fontclass">#icon-transmitting</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-public_fill"></use>
+                    </svg>
+                    <div class="name">public_fill</div>
+                    <div class="fontclass">#icon-public_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-favorite_fill"></use>
+                    </svg>
+                    <div class="name">favorite_fill</div>
+                    <div class="fontclass">#icon-favorite_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tag_fill"></use>
+                    </svg>
+                    <div class="name">tag_fill</div>
+                    <div class="fontclass">#icon-tag_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-market"></use>
+                    </svg>
+                    <div class="name">market</div>
+                    <div class="fontclass">#icon-market</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-logout"></use>
+                    </svg>
+                    <div class="name">logout</div>
+                    <div class="fontclass">#icon-logout</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-faq"></use>
+                    </svg>
+                    <div class="name">faq</div>
+                    <div class="fontclass">#icon-faq</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-user"></use>
+                    </svg>
+                    <div class="name">user</div>
+                    <div class="fontclass">#icon-user</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-level"></use>
+                    </svg>
+                    <div class="name">level</div>
+                    <div class="fontclass">#icon-level</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-detail_info"></use>
+                    </svg>
+                    <div class="name">detail_info</div>
+                    <div class="fontclass">#icon-detail_info</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-feedback"></use>
+                    </svg>
+                    <div class="name">feedback</div>
+                    <div class="fontclass">#icon-feedback</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-about"></use>
+                    </svg>
+                    <div class="name">about</div>
+                    <div class="fontclass">#icon-about</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-settings"></use>
+                    </svg>
+                    <div class="name">settings</div>
+                    <div class="fontclass">#icon-settings</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-image"></use>
+                    </svg>
+                    <div class="name">image</div>
+                    <div class="fontclass">#icon-image</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-music"></use>
+                    </svg>
+                    <div class="name">music</div>
+                    <div class="fontclass">#icon-music</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-video"></use>
+                    </svg>
+                    <div class="name">video</div>
+                    <div class="fontclass">#icon-video</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-excel"></use>
+                    </svg>
+                    <div class="name">excel</div>
+                    <div class="fontclass">#icon-excel</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-document"></use>
+                    </svg>
+                    <div class="name">document</div>
+                    <div class="fontclass">#icon-document</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-others"></use>
+                    </svg>
+                    <div class="name">others</div>
+                    <div class="fontclass">#icon-others</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-powerpoint"></use>
+                    </svg>
+                    <div class="name">powerpoint</div>
+                    <div class="fontclass">#icon-powerpoint</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pdf"></use>
+                    </svg>
+                    <div class="name">pdf</div>
+                    <div class="fontclass">#icon-pdf</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-txt"></use>
+                    </svg>
+                    <div class="name">txt</div>
+                    <div class="fontclass">#icon-txt</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-apple"></use>
+                    </svg>
+                    <div class="name">apple</div>
+                    <div class="fontclass">#icon-apple</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-android"></use>
+                    </svg>
+                    <div class="name">android</div>
+                    <div class="fontclass">#icon-android</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-windows"></use>
+                    </svg>
+                    <div class="name">windows</div>
+                    <div class="fontclass">#icon-windows</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-note"></use>
+                    </svg>
+                    <div class="name">note</div>
+                    <div class="fontclass">#icon-note</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-code"></use>
+                    </svg>
+                    <div class="name">code</div>
+                    <div class="fontclass">#icon-code</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unknown"></use>
+                    </svg>
+                    <div class="name">unknown</div>
+                    <div class="fontclass">#icon-unknown</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-word"></use>
+                    </svg>
+                    <div class="name">word</div>
+                    <div class="fontclass">#icon-word</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-default_small"></use>
+                    </svg>
+                    <div class="name">default_small</div>
+                    <div class="fontclass">#icon-default_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unknown_small"></use>
+                    </svg>
+                    <div class="name">unknown_small</div>
+                    <div class="fontclass">#icon-unknown_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-music_small"></use>
+                    </svg>
+                    <div class="name">music_small</div>
+                    <div class="fontclass">#icon-music_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-note_small"></use>
+                    </svg>
+                    <div class="name">note_small</div>
+                    <div class="fontclass">#icon-note_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-windows_small"></use>
+                    </svg>
+                    <div class="name">windows_small</div>
+                    <div class="fontclass">#icon-windows_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-code_small"></use>
+                    </svg>
+                    <div class="name">code_small</div>
+                    <div class="fontclass">#icon-code_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-apple_small"></use>
+                    </svg>
+                    <div class="name">apple_small</div>
+                    <div class="fontclass">#icon-apple_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-android_small"></use>
+                    </svg>
+                    <div class="name">android_small</div>
+                    <div class="fontclass">#icon-android_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-txt_small"></use>
+                    </svg>
+                    <div class="name">txt_small</div>
+                    <div class="fontclass">#icon-txt_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-others_small"></use>
+                    </svg>
+                    <div class="name">others_small</div>
+                    <div class="fontclass">#icon-others_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-powerpoint_small"></use>
+                    </svg>
+                    <div class="name">powerpoint_small</div>
+                    <div class="fontclass">#icon-powerpoint_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pdf_small"></use>
+                    </svg>
+                    <div class="name">pdf_small</div>
+                    <div class="fontclass">#icon-pdf_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-excel_small"></use>
+                    </svg>
+                    <div class="name">excel_small</div>
+                    <div class="fontclass">#icon-excel_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-word_small"></use>
+                    </svg>
+                    <div class="name">word_small</div>
+                    <div class="fontclass">#icon-word_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-video_small"></use>
+                    </svg>
+                    <div class="name">video_small</div>
+                    <div class="fontclass">#icon-video_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-image_small"></use>
+                    </svg>
+                    <div class="name">image_small</div>
+                    <div class="fontclass">#icon-image_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-cloud_backup"></use>
+                    </svg>
+                    <div class="name">cloud_backup</div>
+                    <div class="fontclass">#icon-cloud_backup</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-trashbin"></use>
+                    </svg>
+                    <div class="name">trashbin</div>
+                    <div class="fontclass">#icon-trashbin</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-all_document"></use>
+                    </svg>
+                    <div class="name">all_document</div>
+                    <div class="fontclass">#icon-all_document</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-user_fill"></use>
+                    </svg>
+                    <div class="name">user_fill</div>
+                    <div class="fontclass">#icon-user_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-document1"></use>
+                    </svg>
+                    <div class="name">document</div>
+                    <div class="fontclass">#icon-document1</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-others_fill"></use>
+                    </svg>
+                    <div class="name">others_fill</div>
+                    <div class="fontclass">#icon-others_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-usb"></use>
+                    </svg>
+                    <div class="name">usb</div>
+                    <div class="fontclass">#icon-usb</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-hardisk"></use>
+                    </svg>
+                    <div class="name">hardisk</div>
+                    <div class="fontclass">#icon-hardisk</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-sdcard"></use>
+                    </svg>
+                    <div class="name">sdcard</div>
+                    <div class="fontclass">#icon-sdcard</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-star_left"></use>
+                    </svg>
+                    <div class="name">star_left</div>
+                    <div class="fontclass">#icon-star_left</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-star_right"></use>
+                    </svg>
+                    <div class="name">star_right</div>
+                    <div class="fontclass">#icon-star_right</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-player_play"></use>
+                    </svg>
+                    <div class="name">player_play</div>
+                    <div class="fontclass">#icon-player_play</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-player_pause"></use>
+                    </svg>
+                    <div class="name">player_pause</div>
+                    <div class="fontclass">#icon-player_pause</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-player_volume"></use>
+                    </svg>
+                    <div class="name">player_volume</div>
+                    <div class="fontclass">#icon-player_volume</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-remove"></use>
+                    </svg>
+                    <div class="name">remove</div>
+                    <div class="fontclass">#icon-remove</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-start"></use>
+                    </svg>
+                    <div class="name">start</div>
+                    <div class="fontclass">#icon-start</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pause"></use>
+                    </svg>
+                    <div class="name">pause</div>
+                    <div class="fontclass">#icon-pause</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-triagle_down"></use>
+                    </svg>
+                    <div class="name">triagle_down</div>
+                    <div class="fontclass">#icon-triagle_down</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-triagle_right"></use>
+                    </svg>
+                    <div class="name">triagle_right</div>
+                    <div class="fontclass">#icon-triagle_right</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-triagle_up"></use>
+                    </svg>
+                    <div class="name">triagle_up</div>
+                    <div class="fontclass">#icon-triagle_up</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-triagle_left"></use>
+                    </svg>
+                    <div class="name">triagle_left</div>
+                    <div class="fontclass">#icon-triagle_left</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow_right"></use>
+                    </svg>
+                    <div class="name">arrow_right</div>
+                    <div class="fontclass">#icon-arrow_right</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-alert_done"></use>
+                    </svg>
+                    <div class="name">alert_done</div>
+                    <div class="fontclass">#icon-alert_done</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-alert_warning"></use>
+                    </svg>
+                    <div class="name">alert_warning</div>
+                    <div class="fontclass">#icon-alert_warning</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-checkbox_list"></use>
+                    </svg>
+                    <div class="name">checkbox_list</div>
+                    <div class="fontclass">#icon-checkbox_list</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-checkbox"></use>
+                    </svg>
+                    <div class="name">checkbox</div>
+                    <div class="fontclass">#icon-checkbox</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-cloud_big"></use>
+                    </svg>
+                    <div class="name">cloud_big</div>
+                    <div class="fontclass">#icon-cloud_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-add"></use>
+                    </svg>
+                    <div class="name">add</div>
+                    <div class="fontclass">#icon-add</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-home_big"></use>
+                    </svg>
+                    <div class="name">home_big</div>
+                    <div class="fontclass">#icon-home_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-transfer_big"></use>
+                    </svg>
+                    <div class="name">transfer_big</div>
+                    <div class="fontclass">#icon-transfer_big</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow_left"></use>
+                    </svg>
+                    <div class="name">arrow_left</div>
+                    <div class="fontclass">#icon-arrow_left</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow_down"></use>
+                    </svg>
+                    <div class="name">arrow_down</div>
+                    <div class="fontclass">#icon-arrow_down</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow_up"></use>
+                    </svg>
+                    <div class="name">arrow_up</div>
+                    <div class="fontclass">#icon-arrow_up</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-expand"></use>
+                    </svg>
+                    <div class="name">expand</div>
+                    <div class="fontclass">#icon-expand</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-folder"></use>
+                    </svg>
+                    <div class="name">folder</div>
+                    <div class="fontclass">#icon-folder</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-group_fill"></use>
+                    </svg>
+                    <div class="name">group_fill</div>
+                    <div class="fontclass">#icon-group_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-message"></use>
+                    </svg>
+                    <div class="name">message</div>
+                    <div class="fontclass">#icon-message</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-move"></use>
+                    </svg>
+                    <div class="name">move</div>
+                    <div class="fontclass">#icon-move</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-recent_fill"></use>
+                    </svg>
+                    <div class="name">recent_fill</div>
+                    <div class="fontclass">#icon-recent_fill</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-compress_small"></use>
+                    </svg>
+                    <div class="name">compress_small</div>
+                    <div class="fontclass">#icon-compress_small</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-compress"></use>
+                    </svg>
+                    <div class="name">compress</div>
+                    <div class="fontclass">#icon-compress</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-more_vertical"></use>
+                    </svg>
+                    <div class="name">more_vertical</div>
+                    <div class="fontclass">#icon-more_vertical</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-more_horizonal"></use>
+                    </svg>
+                    <div class="name">more_horizonal</div>
+                    <div class="fontclass">#icon-more_horizonal</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-upper"></use>
+                    </svg>
+                    <div class="name">upper</div>
+                    <div class="fontclass">#icon-upper</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unbind"></use>
+                    </svg>
+                    <div class="name">unbind</div>
+                    <div class="fontclass">#icon-unbind</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-hamburger"></use>
+                    </svg>
+                    <div class="name">hamburger</div>
+                    <div class="fontclass">#icon-hamburger</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qrcode"></use>
+                    </svg>
+                    <div class="name">qrcode</div>
+                    <div class="fontclass">#icon-qrcode</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-share"></use>
+                    </svg>
+                    <div class="name">share</div>
+                    <div class="fontclass">#icon-share</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wechat_blind"></use>
+                    </svg>
+                    <div class="name">wechat_blind</div>
+                    <div class="fontclass">#icon-wechat_blind</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-no_scale"></use>
+                    </svg>
+                    <div class="name">no_scale</div>
+                    <div class="fontclass">#icon-no_scale</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zoom_in"></use>
+                    </svg>
+                    <div class="name">zoom_in</div>
+                    <div class="fontclass">#icon-zoom_in</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-normalize"></use>
+                    </svg>
+                    <div class="name">normalize</div>
+                    <div class="fontclass">#icon-normalize</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-full_screen"></use>
+                    </svg>
+                    <div class="name">full_screen</div>
+                    <div class="fontclass">#icon-full_screen</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ppt_play"></use>
+                    </svg>
+                    <div class="name">ppt_play</div>
+                    <div class="fontclass">#icon-ppt_play</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zoom_out"></use>
+                    </svg>
+                    <div class="name">zoom_out</div>
+                    <div class="fontclass">#icon-zoom_out</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-flash"></use>
+                    </svg>
+                    <div class="name">flash</div>
+                    <div class="fontclass">#icon-flash</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-keynote"></use>
+                    </svg>
+                    <div class="name">keynote</div>
+                    <div class="fontclass">#icon-keynote</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-vector"></use>
+                    </svg>
+                    <div class="name">vector</div>
+                    <div class="fontclass">#icon-vector</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-torrent"></use>
+                    </svg>
+                    <div class="name">torrent</div>
+                    <div class="fontclass">#icon-torrent</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ps"></use>
+                    </svg>
+                    <div class="name">ps</div>
+                    <div class="fontclass">#icon-ps</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-font"></use>
+                    </svg>
+                    <div class="name">font</div>
+                    <div class="fontclass">#icon-font</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xmind"></use>
+                    </svg>
+                    <div class="name">xmind</div>
+                    <div class="fontclass">#icon-xmind</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-mmap"></use>
+                    </svg>
+                    <div class="name">mmap</div>
+                    <div class="fontclass">#icon-mmap</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-numbers"></use>
+                    </svg>
+                    <div class="name">numbers</div>
+                    <div class="fontclass">#icon-numbers</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pages"></use>
+                    </svg>
+                    <div class="name">pages</div>
+                    <div class="fontclass">#icon-pages</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-d"></use>
+                    </svg>
+                    <div class="name">3d</div>
+                    <div class="fontclass">#icon-d</div>
+                </li>
+            
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-prototype"></use>
+                    </svg>
+                    <div class="name">prototype</div>
+                    <div class="fontclass">#icon-prototype</div>
+                </li>
+            
+        </ul>
+
+
+        <h2 id="symbol-">symbol引用</h2>
+        <hr>
+
+        <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="">文章</a>
+        这种用法其实是做了一个svg的集合，与另外两种相比具有如下特点：</p>
+        <ul>
+          <li>支持多色图标了，不再受单色限制。</li>
+          <li>通过一些技巧，支持像字体那样，通过<code>font-size</code>,<code>color</code>来调整样式。</li>
+          <li>兼容性较差，支持 ie9+,及现代浏览器。</li>
+          <li>浏览器渲染svg的性能一般，还不如png。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-symbol-">第一步：引入项目下面生成的symbol代码：</h3>
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;script src="./iconfont.js"&gt;&lt;/script&gt;</span></code></pre>
+        <h3 id="-css-">第二步：加入通用css代码（引入一次就行）：</h3>
+        <pre><code class="lang-js hljs javascript">&lt;style type=<span class="hljs-string">"text/css"</span>&gt;
+.icon {
+   width: <span class="hljs-number">1</span>em; height: <span class="hljs-number">1</span>em;
+   vertical-align: <span class="hljs-number">-0.15</span>em;
+   fill: currentColor;
+   overflow: hidden;
+}
+&lt;<span class="hljs-regexp">/style&gt;</span></code></pre>
+        <h3 id="-">第三步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-js hljs javascript">&lt;svg <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"icon"</span> aria-hidden=<span class="hljs-string">"true"</span>&gt;<span class="xml"><span class="hljs-tag">
+  &lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"#icon-xxx"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+</span>&lt;<span class="hljs-regexp">/svg&gt;
+        </span></code></pre>
+    </div>
+</body>
+</html>
