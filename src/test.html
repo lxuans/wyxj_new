@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .top{
+            
+            border:20px solid blue;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="arrow-top arrow-box" >
+        <b class="top"></b>
+    </div>
+    <script>
+        var x = new Boolean(false); //有值
+        var x; //无值
+        console.log(x);
+        //判断x是否有值,有值就是true
+        if(!x){
+            alert('hi')
+        };
+        var y = Boolean(0);
+        //判断y是否为真
+        if(y){
+            alert('hello')
+        }
+    </script>
+</body>
+</html>

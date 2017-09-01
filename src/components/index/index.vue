@@ -1,260 +1,79 @@
 <template>
-    <main>
+    <section class="index">
         <header class="header">
             <div class="menu">
                 <span class="left hamburger icon-hamburger"></span>
                 <span class="right lan icon-lan"></span>
             </div>
             <!--会闪的星星  -->
-            <!-- <div class="stars"></div> -->
-            <div class="circle"></div>
+            <div class="stars"></div>
+            <div class="circle">
+                加载中...
+            </div>
             <div class="cloud"></div>
         </header>
         <div class="nav_bar">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-home"></span>
+                        <span class="all_document icon-all_document" style="color:#ffc581"></span>
                         <div class="mui-media-body">全部</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-email"></span>
+                        <span class="tag_fill icon-tag_fill" style="color:#7fcf8e"></span>
                         <div class="mui-media-body">标签</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-chatbubble">
-                            <span class="mui-badge">3</span>
-                        </span>
+                        <span class="mui-icon-extra mui-icon-extra-heart-filled" style="color:#ff7878"></span>
                         <div class="mui-media-body">收藏</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-location"></span>
+                        <span class="image icon-image" style="color:#7fcf8e"></span>
                         <div class="mui-media-body">图片</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-search"></span>
+                        <span class="video icon-video" style="color:#b3afff"></span>
                         <div class="mui-media-body">视频</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-phone"></span>
+                        <span class="music_small icon-music_small" style="color:#ff88a5"></span>
                         <div class="mui-media-body">音乐</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-gear"></span>
+                        <span class="document icon-document1" style="color:#86b9ff"></span>
                         <div class="mui-media-body">文档</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-info"></span>
+                        <span class="usb icon-usb" style="color:#e7e7e7"></span>
                         <div class="mui-media-body">USB</div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon mui-icon-more"></span>
+                        <span class="sdcard icon-sdcard" style="color:#e7e7e7"></span>
                         <div class="mui-media-body">SD卡</div>
                     </a>
                 </li>
             </ul>
         </div>
-        <footer class="footer">
-            <nav class="mui-bar-tab">
-                <a class="mui-tab-item mui-active" href="#tabbar">
-                    <span class="mui-tab-label">私家云</span>
-                </a>
-                <a class="mui-tab-item" href="#tabbar-with-contact">
-                    <span class="mui-tab-label">共享</span>
-                </a>
-                <a class="mui-tab-item" href="#tabbar-with-map">
-                    <span class="mui-tab-label">我的</span>
-                </a>
 
-            </nav>
-        </footer>
-        <div></div>
-    </main>
+    </section>
 </template>
 
-<div class="mui-content">
-			<div id="tabbar" class="mui-control-content">
-				<div class="title">这是div模式选项卡中的第1个子页面.</div>
-				<div class="title">何谓div模式的选项卡？
-					其实就是通过DIV模拟一个独立页面，通过DIV的显示、隐藏模拟不同页面的切换，典型的SPA模式；</div>
-				<div class="title">
-					这种模式适合简单业务系统，因为每个选项卡内容要写在一个DIV中，
-					若逻辑复杂，会导致当前页面DOM结构繁杂，造成webview响应缓慢，甚至崩溃；
-					因此若系统较复杂，需要下拉刷新等操作，推荐使用webview模式的选项卡；</div>
-			</div>
-			<div id="tabbar-with-chat" class="mui-control-content mui-active">
-				<div class="title">这是div模式选项卡中的第2个子页面，该页面展示一个消息列表</div>
-				
-				<ul class="mui-table-view mui-table-view-chevron">
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 1</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 2</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 3</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 4</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 5</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 6</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 7</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 8</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 9</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 10</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 11</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 12</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 13</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 14</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 15</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 16</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 17</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 18</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 19</a></li>
-					<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 20</a></li>
-				</ul>
-				
-			</div>
-			<div id="tabbar-with-contact" class="mui-control-content">
-				<div class="title">这是div模式选项卡中的第3个子页面，该页面展示一个通讯录示例.</div>
-				<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
-				<li class="mui-table-view-cell">
-					<div class="mui-slider-cell">
-						<div class="oa-contact-cell mui-table">
-							<div class="oa-contact-avatar mui-table-cell">
-								<img src="../images/60x60.gif">
-							</div>
-							<div class="oa-contact-content mui-table-cell">
-								<div class="mui-clearfix">
-									<h4 class="oa-contact-name">叶文洁</h4>
-									<span class="oa-contact-position mui-h6">董事长</span>
-								</div>
-								<p class="oa-contact-email mui-h6">
-									yewenjie@sina.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="mui-table-view-cell">
-					<div class="mui-slider-cell">
-						<div class="oa-contact-cell mui-table">
-							<div class="oa-contact-avatar mui-table-cell">
-								<img src="../images/60x60.gif">
-							</div>
-							<div class="oa-contact-content mui-table-cell">
-								<div class="mui-clearfix">
-									<h4 class="oa-contact-name">艾AA</h4>
-									<span class="oa-contact-position mui-h6">总经理</span>
-								</div>
-								<p class="oa-contact-email mui-h6">
-									aaa@163.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="mui-table-view-cell">
-					<div class="mui-slider-cell">
-						<div class="oa-contact-cell mui-table">
-							<div class="oa-contact-avatar mui-table-cell">
-								<img src="../images/60x60.gif">
-							</div>
-							<div class="oa-contact-content mui-table-cell">
-								<div class="mui-clearfix">
-									<h4 class="oa-contact-name">罗辑</h4>
-									<span class="oa-contact-position mui-h6">员工</span>
-								</div>
-								<p class="oa-contact-email mui-h6">
-									luoji@126.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="mui-table-view-cell">
-					<div class="mui-slider-cell">
-						<div class="oa-contact-cell mui-table">
-							<div class="oa-contact-avatar mui-table-cell">
-								<img src="../images/60x60.gif">
-							</div>
-							<div class="oa-contact-content mui-table-cell">
-								<div class="mui-clearfix">
-									<h4 class="oa-contact-name">云天明</h4>
-									<span class="oa-contact-position mui-h6">员工</span>
-								</div>
-								<p class="oa-contact-email mui-h6">
-									ytm@163.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="mui-table-view-cell">
-					<div class="mui-slider-cell">
-						<div class="oa-contact-cell mui-table">
-							<div class="oa-contact-avatar mui-table-cell">
-								<img src="../images/60x60.gif">
-							</div>
-							<div class="oa-contact-content mui-table-cell">
-								<div class="mui-clearfix">
-									<h4 class="oa-contact-name">史强</h4>
-									<span class="oa-contact-position mui-h6">员工</span>
-								</div>
-								<p class="oa-contact-email mui-h6">
-									shiqiang@gmail.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			</div>
-			<div id="tabbar-with-map" class="mui-control-content">
-				<div class="title">这是div模式选项卡中的第4个子页面，该页面展示一个常见的设置示例.</div>
-				<ul class="mui-table-view">
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						新消息通知
-					</a>
-				</li>
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						隐私
-					</a>
-				</li>
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						通用
-					</a>
-				</li>
-			</ul>
-			<ul class="mui-table-view" style="margin-top: 25px;">
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						关于mui
-					</a>
-				</li>
-			</ul>
-			<ul class="mui-table-view" style="margin-top: 25px;">
-				<li class="mui-table-view-cell">
-					<a style="text-align: center;color: #FF3B30;">
-						退出登录
-					</a>
-				</li>
-			</ul>
-			</div>
-		</div>
 
 <script>
 export default {
@@ -266,13 +85,12 @@ export default {
 .header {
     // height: 750px;
     // width: 750px;
-    height: 538px; // padding: 0px 25px 103px 34px;
+    height: 538px;
     position: relative;
     text-align: center;
     background-image: linear-gradient(to top, #ffffff, #7383ff 60%, #4073ff);
     .menu {
         height: 75px;
-        // background-color: pink;
         span {
             font-size: 40px;
             color: #fff;
@@ -299,6 +117,9 @@ export default {
         top: 75px;
         left: 50%;
         transform: translateX(-50%);
+        text-align: center;
+        line-height: 360px;
+        color: #fff;
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3));
         box-shadow: inset 18.4px 18.4px 70px 0 rgba(255, 255, 255, 0.75);
     }
@@ -308,25 +129,26 @@ export default {
 }
 
 .nav_bar {
-    height: 571px;
+    // height: 571px;
+    margin-bottom: 97px;
     .mui-grid-9 {
+        border: none;
+        background-color: #fff;
         .mui-table-view-cell {
             height: 180px;
             padding: 40px 15px;
+            border: none;
+            a {
+                font-size: 24px;
+                &:nth-of-type(-n+2){
+                    color: #eee;
+                }
+            }
+            :hover {
+                text-decoration: none;
+            }
+            
         }
-    }
-}
-
-.footer {
-    border-top: 1px solid red;
-    position: fixed;
-    bottom: 0; // width: 750px;
-    height: 97px;
-    .mui-bar-tab {
-        height: 97px;
-    }
-    div {
-        height: 97px;
     }
 }
 </style>
