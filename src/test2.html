@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid black;
+            margin: 50px;
+            color: yellow;
+        }
+        
+</style>
+
+</head>
+
+<body>
+    <!-- <template> -->
+        <div id="box" ref="mybox">{{name}}</div>
+    <!-- </template> -->
+        
+    
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#box",
+            data: {
+                name:"hezi"
+            },
+            methods: {
+                init:()=>{
+                    var ele = this.$refs.mybox;
+                    console.log(ele)
+                }
+            },
+            created(){
+                this.init()
+            }
+        }) 
+
+    </script>
+</body>
+
+</html>

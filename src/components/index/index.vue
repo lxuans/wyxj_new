@@ -1,9 +1,13 @@
 <template>
     <section class="index">
-        <header class="header">
+        <v-header></v-header>
+        <div class="box_show">
             <div class="menu">
-                <span class="left hamburger icon-hamburger"></span>
-                <span class="right lan icon-lan"></span>
+                <router-link to="/index/changebox">
+                    <span class="left hamburger icon-hamburger"></span>
+                </router-link>
+                <span class="right lan icon-lan" @click="showNotice()">
+                </span>
             </div>
             <!--会闪的星星  -->
             <div class="stars"></div>
@@ -11,7 +15,7 @@
                 加载中...
             </div>
             <div class="cloud"></div>
-        </header>
+        </div>
         <div class="nav_bar">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
@@ -28,7 +32,7 @@
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
-                        <span class="mui-icon-extra mui-icon-extra-heart-filled" style="color:#ff7878"></span>
+                        <span class="favorite_fill icon-favorite_fill" style="color:#ff7878"></span>
                         <div class="mui-media-body">收藏</div>
                     </a>
                 </li>
@@ -70,84 +74,203 @@
                 </li>
             </ul>
         </div>
-
+        <div class="mask" v-show="isShow">
+            <div class="noticePage" >
+                <div class="notice_card">
+                    <div class="card_header">
+                        <div class="closeBtn" @click="hideNotice()">
+                            <span class="close icon-close"></span>
+                        </div>
+                        <div class="title">
+                            <i class="right lan icon-lan"></i>
+                            近场网络</div>
+                    </div>
+                    <div class="card_content">
+                        <img src="../../imgs/hint_nearfield_pic.png" alt="">
+                    </div>
+                    <div class="card_footer">手机与私家云设备处于同一WiFi网络。可以使用私家云全部功能。</div>
+                </div>
+                <div class="notice_card">
+                    <div class="card_header">
+                        <div class="title">
+                            <i class="right lan icon-lan"></i>
+                            近场网络</div>
+                    </div>
+                    <div class="card_content">
+                        <img src="../../imgs/hint_farend_pic.png" alt="">
+                    </div>
+                    <div class="card_footer">手机与私家云设备处于同一WiFi网络。可以使用私家云全部功能。</div>
+                </div>
+                <div class="known" @click="hideNotice()">
+                    <span>我知道了</span>
+                </div>
+            </div>
+        </div>
+        <v-footer></v-footer>
     </section>
 </template>
 
 
 <script>
-export default {
 
+// 引入顶部固定功能栏
+import Cheader from '../home/header.vue'
+// 引入底部导航栏
+import Cfooter from '../home/footer.vue';
+
+export default {
+    data: () => {
+        return {
+            isShow: false,
+            // isShow: true
+        }
+    },
+    methods: {
+        showNotice: () => {
+            this.isShow = !this.isShow
+            alert(this.isShow)
+            // alert(123)
+        },
+        hideNotice: () => {
+            this.isShow = !this.isShow
+        }
+    },
+    // created(){
+    //     this.alertNotice()
+    // },
+    components: {
+        'v-header': Cheader,
+        'v-footer': Cfooter
+    }
 }
 </script>
 
 <style lang="less" scoped>
-.header {
-    // height: 750px;
-    // width: 750px;
-    height: 538px;
+.index {
     position: relative;
-    text-align: center;
-    background-image: linear-gradient(to top, #ffffff, #7383ff 60%, #4073ff);
-    .menu {
-        height: 75px;
-        span {
-            font-size: 40px;
-            color: #fff;
-        }
-        .left {
-            float: left;
-            margin-left: 30px;
-        }
-        .right {
-            float: right;
-            margin-right: 30px;
-        }
-    } // .stars {
-    //     width: 691px;
-    //     height: 246px;
-    //     margin: 34px 25px 80px 34px;
-    //     background-color: #ffffff;
-    // }
-    .circle {
-        width: 360px;
-        height: 360px;
-        border-radius: 50%;
-        position: absolute;
-        top: 75px;
-        left: 50%;
-        transform: translateX(-50%);
+    .box_show {
+        width: 750px;
+        height: 538px;
+        position: relative;
         text-align: center;
-        line-height: 360px;
-        color: #fff;
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3));
-        box-shadow: inset 18.4px 18.4px 70px 0 rgba(255, 255, 255, 0.75);
+        background-image: linear-gradient(to top, #ffffff, #7383ff 60%, #4073ff);
+        .menu {
+            height: 75px;
+            span {
+                font-size: 40px;
+                color: #fff;
+            }
+            .left {
+                float: left;
+                margin-left: 30px;
+            }
+            .right {
+                float: right;
+                margin-right: 30px;
+            }
+        } // .stars {
+        //     width: 691px;
+        //     height: 246px;
+        //     margin: 34px 25px 80px 34px;
+        //     background-color: #ffffff;
+        // }
+        .circle {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height: 360px;
+            color: #fff;
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3));
+            box-shadow: inset 18.4px 18.4px 70px 0 rgba(255, 255, 255, 0.75);
+        }
+        .cloud {
+            // background: url("../imgs/cloud1.png") no-repeat;
+        }
     }
-    .cloud {
-        // background: url("../imgs/cloud1.png") no-repeat;
-    }
-}
 
-.nav_bar {
-    // height: 571px;
-    margin-bottom: 97px;
-    .mui-grid-9 {
-        border: none;
-        background-color: #fff;
-        .mui-table-view-cell {
-            height: 180px;
-            padding: 40px 15px;
+    .nav_bar {
+        height: 571px;
+        width: 750px;
+        margin-bottom: 97px;
+        .mui-grid-9 {
             border: none;
-            a {
-                font-size: 24px;
-                &:nth-of-type(-n+2){
-                    color: #eee;
+            background-color: #fff;
+            .mui-table-view-cell {
+                height: 180px;
+                padding: 40px 15px;
+                margin-bottom: 10px;
+                border: none;
+                a {
+                    font-size: 24px;
+                    &:nth-of-type(-n+2) {
+                        color: #eee;
+                    }
+                }
+                 :hover {
+                    text-decoration: none;
                 }
             }
-            :hover {
-                text-decoration: none;
+        }
+    }
+    .mask {
+        width: 750px;
+        height: 1206px;
+        background: rgba(0, 0, 0, .3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        .noticePage {
+            width: 650px;
+            height: 818px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: #fff;
+            border-radius: 5px;
+            .notice_card {
+                font-size: 24px;
+                color: #333;
+                height: 358px;
+                padding: 0 64px;
+                border-bottom: 1px solid #ccc;
+                .card_header {
+                    height: 112px;
+                    padding-bottom: 24px;
+                    .closeBtn {
+                        font-size: 28px;
+                        color: #66a7ff;
+                        float: right;
+                        margin-top: 20px;
+                        margin-right: -44px;
+                    }
+                    .title {
+                        padding-bottom: 25px;
+                        line-height: 112px;
+                    }
+                }
+                .card_content {
+                    width: 520px;
+                    height: 130px;
+                }
+                .card_footer {
+                    height: 117px;
+                    padding: 19px 22px 0 16px;
+                }
             }
-            
+            .known {
+                text-align: center;
+                span {
+                    font-size: 32px;
+                    line-height: 99px;
+                    color: #66a7ff;
+                }
+            }
         }
     }
 }

@@ -1,29 +1,37 @@
 
 <template>
   <main>
-    <v-header></v-header>
+    
     <router-view></router-view>
-    <v-footer></v-footer>
+    
   </main>
 </template>
 
 <script>
 
 // 引入顶部固定功能栏
-import Cheader from './home/header.vue'
+// import Cheader from './home/header.vue'
 // 引入底部导航栏
-import Cfooter from './home/footer.vue';
+// import Cfooter from './home/footer.vue';
 
 export default {
-  components:{
-    'v-header':Cheader,
-    'v-footer': Cfooter
-  }
+  // components:{
+  //   'v-header':Cheader,
+  //   'v-footer': Cfooter
+  // }
 }
 </script>
 
 <style>
-
+  * {
+     font-family: "microsoft yahei" 
+  }
+  body {
+    height: 1334px;
+    width: 750px;
+    padding-top: 40px;
+    
+  }
 </style>
 
 

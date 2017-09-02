@@ -7,7 +7,6 @@
             </router-link>
             <mt-button icon="more" slot="right"></mt-button>
         </mt-header>
-        <div></div>
     </header>
 </template>
 
@@ -19,14 +18,13 @@ export default {
 
 <style lang="less" scoped>
 .header {
-    
+    .mint-header.is-fixed {
+        position: static;
+    }
     .mint-header {
         width: 750px;
         height: 88px;
         background-color: #000;
-    }
-    div {
-        height: 88px;
     }
 }
 </style>
