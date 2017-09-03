@@ -42,6 +42,60 @@
                             </div>
                         </a>
                     </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                        <a href="javascript:;">
+                            <img class="mui-media-object mui-pull-left" src="">
+                            <div class="mui-media-body title">
+                                王尔德
+                                <p class="mui-ellipsis">03-12 共享了4个文件 | 已共享32个文件</p>
+                            </div>
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -51,16 +105,16 @@
 
 <script>
 
-// import BScroll from 'better-scroll';
+import BScroll from 'better-scroll';
 
 export default {
     methods: {
         scroll() {
-            // new BScroll('#user_wrapper', {})
+            new BScroll('#user_wrapper', {})
         }
     },
     mounted() {
-        // this.scroll();
+        this.scroll();
     }
 }
 </script>
