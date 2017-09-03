@@ -8,13 +8,11 @@ import 'mui/dist/css/mui.css';
 import 'mui/examples/hello-mui/css/icons-extra.css'; // 引入mui的扩展图标样式
 import '../iconfont/demo.css';
 import '../iconfont/iconfont.css';
-// import VueScroll from 'vue-scroll';//引入vue-scroll插件
 // import BScroll from 'better-scroll';
 
 
 Vue.use(VueRouter);
 Vue.use(MintUI);
-// Vue.use(VueScroll);
 // Vue.use(BScroll);
 
 

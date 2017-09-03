@@ -11,24 +11,24 @@
 <body>
     <div id="app">
         <p v-if="seen">现在你看到我了</p>
-        <div @click="toggle">123</div>
-        <template v-if="ok">
-            <h1>菜鸟教程</h1>
-            <p>学的不仅是技术，更是梦想！</p>
-            <p>哈哈哈，打字辛苦啊！！！</p>
-        </template>
+        <div v-show="seen">
+            <h1>{{msg}}</h1>
+            
+        </div>
+        <button @click="changeShow">123</button>
+        
     </div>
-    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
     <script>
-        new Vue({
+        var vm = new Vue({
             el: '#app',
             data: {
+                msg: '人类分几种？不清楚...',
                 seen: true,
-                ok: false
             },
             methods:{
-                toggle:()=>{
-                    this.ok = true
+                changeShow:function(){
+                    this.seen = !this.seen
                 }
             }
         })

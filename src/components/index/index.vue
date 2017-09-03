@@ -126,12 +126,12 @@ export default {
         }
     },
     methods: {
-        showNotice: () => {
+        showNotice: function(){
             this.isShow = !this.isShow
-            alert(this.isShow)
+            // alert(this.isShow)
             // alert(123)
         },
-        hideNotice: () => {
+        hideNotice: function(){
             this.isShow = !this.isShow
         }
     },
@@ -146,134 +146,134 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.index {
-    position: relative;
-    .box_show {
-        width: 750px;
-        height: 538px;
+    .index {
         position: relative;
-        text-align: center;
-        background-image: linear-gradient(to top, #ffffff, #7383ff 60%, #4073ff);
-        .menu {
-            height: 75px;
-            span {
-                font-size: 40px;
-                color: #fff;
-            }
-            .left {
-                float: left;
-                margin-left: 30px;
-            }
-            .right {
-                float: right;
-                margin-right: 30px;
-            }
-        } // .stars {
-        //     width: 691px;
-        //     height: 246px;
-        //     margin: 34px 25px 80px 34px;
-        //     background-color: #ffffff;
-        // }
-        .circle {
-            width: 360px;
-            height: 360px;
-            border-radius: 50%;
-            position: absolute;
-            top: 75px;
-            left: 50%;
-            transform: translateX(-50%);
+        .box_show {
+            width: 750px;
+            height: 538px;
+            position: relative;
             text-align: center;
-            line-height: 360px;
-            color: #fff;
-            background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3));
-            box-shadow: inset 18.4px 18.4px 70px 0 rgba(255, 255, 255, 0.75);
-        }
-        .cloud {
-            // background: url("../imgs/cloud1.png") no-repeat;
-        }
-    }
-
-    .nav_bar {
-        height: 571px;
-        width: 750px;
-        margin-bottom: 97px;
-        .mui-grid-9 {
-            border: none;
-            background-color: #fff;
-            .mui-table-view-cell {
-                height: 180px;
-                padding: 40px 15px;
-                margin-bottom: 10px;
-                border: none;
-                a {
-                    font-size: 24px;
-                    &:nth-of-type(-n+2) {
-                        color: #eee;
-                    }
-                }
-                 :hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    .mask {
-        width: 750px;
-        height: 1206px;
-        background: rgba(0, 0, 0, .3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        .noticePage {
-            width: 650px;
-            height: 818px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background-color: #fff;
-            border-radius: 5px;
-            .notice_card {
-                font-size: 24px;
-                color: #333;
-                height: 358px;
-                padding: 0 64px;
-                border-bottom: 1px solid #ccc;
-                .card_header {
-                    height: 112px;
-                    padding-bottom: 24px;
-                    .closeBtn {
-                        font-size: 28px;
-                        color: #66a7ff;
-                        float: right;
-                        margin-top: 20px;
-                        margin-right: -44px;
-                    }
-                    .title {
-                        padding-bottom: 25px;
-                        line-height: 112px;
-                    }
-                }
-                .card_content {
-                    width: 520px;
-                    height: 130px;
-                }
-                .card_footer {
-                    height: 117px;
-                    padding: 19px 22px 0 16px;
-                }
-            }
-            .known {
-                text-align: center;
+            background-image: linear-gradient(to top, #ffffff, #7383ff 60%, #4073ff);
+            .menu {
+                height: 75px;
                 span {
-                    font-size: 32px;
-                    line-height: 99px;
-                    color: #66a7ff;
+                    font-size: 40px;
+                    color: #fff;
+                }
+                .left {
+                    float: left;
+                    margin-left: 30px;
+                }
+                .right {
+                    float: right;
+                    margin-right: 30px;
+                }
+            } // .stars {
+            //     width: 691px;
+            //     height: 246px;
+            //     margin: 34px 25px 80px 34px;
+            //     background-color: #ffffff;
+            // }
+            .circle {
+                width: 360px;
+                height: 360px;
+                border-radius: 50%;
+                position: absolute;
+                top: 75px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                line-height: 360px;
+                color: #fff;
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3));
+                box-shadow: inset 18.4px 18.4px 70px 0 rgba(255, 255, 255, 0.75);
+            }
+            .cloud {
+                // background: url("../imgs/cloud1.png") no-repeat;
+            }
+        }
+
+        .nav_bar {
+            height: 571px;
+            width: 750px;
+            margin-bottom: 97px;
+            .mui-grid-9 {
+                border: none;
+                background-color: #fff;
+                .mui-table-view-cell {
+                    height: 180px;
+                    padding: 40px 15px;
+                    margin-bottom: 10px;
+                    border: none;
+                    a {
+                        font-size: 24px;
+                        &:nth-of-type(-n+2) {
+                            color: #eee;
+                        }
+                    }
+                    :hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .mask {
+            width: 750px;
+            height: 1206px;
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            .noticePage {
+                width: 650px;
+                height: 818px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                background-color: #fff;
+                border-radius: 5px;
+                .notice_card {
+                    font-size: 24px;
+                    color: #333;
+                    height: 358px;
+                    padding: 0 64px;
+                    border-bottom: 1px solid #ccc;
+                    .card_header {
+                        height: 112px;
+                        padding-bottom: 24px;
+                        .closeBtn {
+                            font-size: 28px;
+                            color: #66a7ff;
+                            float: right;
+                            margin-top: 20px;
+                            margin-right: -44px;
+                        }
+                        .title {
+                            padding-bottom: 25px;
+                            line-height: 112px;
+                        }
+                    }
+                    .card_content {
+                        width: 520px;
+                        height: 130px;
+                    }
+                    .card_footer {
+                        height: 117px;
+                        padding: 19px 22px 0 16px;
+                    }
+                }
+                .known {
+                    text-align: center;
+                    span {
+                        font-size: 32px;
+                        line-height: 99px;
+                        color: #66a7ff;
+                    }
                 }
             }
         }
     }
-}
 </style>
 
 

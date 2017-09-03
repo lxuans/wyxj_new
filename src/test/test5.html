@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .mask {
+            width: 750px;
+            height: 1206px;
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .noticePage {
+            width: 650px;
+            height: 818px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .notice_card {
+            font-size: 24px;
+            color: #333;
+            height: 358px;
+            padding: 0 64px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .card_header {
+            height: 112px;
+            padding-bottom: 24px;
+        }
+
+        .closeBtn {
+            font-size: 28px;
+            color: #66a7ff;
+            float: right;
+            margin-top: 20px;
+            margin-right: -44px;
+        }
+
+        .title {
+            padding-bottom: 25px;
+            line-height: 112px;
+        }
+
+        .card_content {
+            width: 520px;
+            height: 130px;
+        }
+
+        .card_footer {
+            height: 117px;
+            padding: 19px 22px 0 16px;
+        }
+
+        .known {
+            text-align: center;
+        }
+
+        .known span {
+            font-size: 32px;
+            line-height: 99px;
+            color: #66a7ff;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="app">
+            <div @click="showNotice">
+                    点击
+                </div>
+                <div class="mask" v-show="isShow">
+                    <div class="noticePage">
+                        <div class="notice_card">
+                            <div class="card_header">
+                                <div class="closeBtn" @click="showNotice">
+                                    <span class="close icon-close">X</span>
+                                </div>
+                                <div class="title">
+                                    <i class="right lan icon-lan"></i> 近场网络
+                                </div>
+                            </div>
+                            <div class="card_content">
+                                <img src="../src/imgs/hint_nearfield_pic.png" alt="">
+                            </div>
+                            <div class="card_footer">手机与私家云设备处于同一WiFi网络。可以使用私家云全部功能。</div>
+                        </div>
+                        <div class="notice_card">
+                            <div class="card_header">
+                                <div class="title">
+                                    <i class="right lan icon-lan"></i> 近场网络
+                                </div>
+                            </div>
+                            <div class="card_content">
+                                <img src="../src/imgs/hint_farend_pic.png" alt="">
+                            </div>
+                            <div class="card_footer">手机与私家云设备处于同一WiFi网络。可以使用私家云全部功能。</div>
+                        </div>
+                        <div class="known" @click="showNotice">
+                            <span>我知道了</span>
+                        </div>
+                    </div>
+    </main>
+    </div>
+    <script src="vue.js"> </script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data: {
+
+                isShow: false,
+
+            },
+            methods: {
+                showNotice: function () {
+                    this.isShow = !this.isShow
+                    // alert(this.isShow)
+                    // alert(123)
+                },
+                // hideNotice: function () {
+                //     this.isShow = !this.isShow
+                // }
+            },
+        })
+    </script>
+</body>
+
+</html>
