@@ -1,6 +1,6 @@
 <template>
     <section class="index">
-        <v-header></v-header>
+        <v-header title="私家云"></v-header>
         <div class="box_show">
             <div class="menu">
                 <router-link to="/index/changebox">
@@ -19,10 +19,10 @@
         <div class="nav_bar">
             <ul class="mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-                    <a href="#">
+                    <router-link to="/index/all">
                         <span class="all_document icon-all_document" style="color:#ffc581"></span>
                         <div class="mui-media-body">全部</div>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">

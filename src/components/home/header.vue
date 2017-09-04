@@ -1,10 +1,10 @@
 <template>
     <header class="header">
-        <mt-header fixed title="私家云">
-            <router-link to="/" slot="left">
+        <mt-header fixed :title="title">
+            <div @click="rollback" slot="left">
                 <mt-button icon="back">返回</mt-button>
                 <!-- <mt-button @click="handleClose">关闭</mt-button> -->
-            </router-link>
+            </div>
             <mt-button icon="more" slot="right"></mt-button>
         </mt-header>
     </header>
@@ -13,6 +13,20 @@
 <script>
 export default {
 
+    // 接收来自父指定的title数据
+    props: ['title'],
+
+    data: function() {
+        return {
+            
+        }
+    },
+    methods: {
+    // 调用返回上一页
+    rollback() {
+      this.$router.go(-1);
+    }
+  }
 }
 </script>
 

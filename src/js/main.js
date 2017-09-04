@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+// import Jquery from 'jquery';
 import App from '../components/App.vue';
 import MintUI from 'mint-ui';
 import { Navbar, TabItem } from 'mint-ui';
@@ -10,7 +11,7 @@ import '../iconfont/demo.css';
 import '../iconfont/iconfont.css';
 // import BScroll from 'better-scroll';
 
-
+// Vue.use(Jquery);
 Vue.use(VueRouter);
 Vue.use(MintUI);
 // Vue.use(BScroll);

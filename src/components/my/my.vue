@@ -1,6 +1,6 @@
 <template>
   <section class="user">
-    <v-header></v-header>
+    <v-header :title="title"></v-header>
     <div class="user_info">
       <div class="info_photo">
         <img src="../../imgs/user.png" alt="">
@@ -43,6 +43,11 @@ import Cheader from '../home/header.vue'
 import Cfooter from '../home/footer.vue';
 
 export default {
+  data: function(){
+    return {
+      title: "我的"
+    }
+  },
   components: {
     'v-header': Cheader,
     'v-footer': Cfooter

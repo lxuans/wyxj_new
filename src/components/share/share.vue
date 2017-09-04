@@ -1,6 +1,6 @@
 <template>
   <section class="share_list">
-    <v-header></v-header>
+    <v-header :title="title"></v-header>
     <mt-navbar v-model="selectedTab">
       <mt-tab-item id="v-file">
         <span>文件</span>
@@ -17,12 +17,7 @@
 
     <!-- tab-container -->
     <component :is="selectedTab"></component>
-    <!-- <div class="share_file" v-show="isShow">
-      <v-file></v-file>
-    </div>
-    <div class="share_user" v-hide="isHide">
-      <v-user></v-user>
-    </div> -->
+    
         
     
     <v-footer></v-footer>
@@ -52,6 +47,7 @@ export default {
 
   data: function() {
     return {
+      title: "共享",
       selectedTab: "",
       
     }
@@ -94,6 +90,7 @@ export default {
         margin-top: 16px;
         text-align: center;
         font-size: 24px;
+        color: #b3b3b3;
     }
   
   .mint-tab-container {

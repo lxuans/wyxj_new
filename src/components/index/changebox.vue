@@ -1,6 +1,6 @@
 <template>
     <section class="changebox">
-        <v-header></v-header>
+        <v-header title="切换设备"></v-header>
         <div class="mui-table-view-cell mui-media">
             <div class="list_item">
                 <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
