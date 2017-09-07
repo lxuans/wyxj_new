@@ -7,45 +7,51 @@
         <i></i>
       </div>
       <p class="userName">超级大懒猫</p>
-      <div class="mui-media share_box">
+      <div class="share_box">
         <div class="box_info">
-          <img class="mui-media-object mui-pull-left" src="../../imgs/device_black.png">
-          <div class="mui-media-body">
-            <div class="title">
-              <span>汪德尔的私家云</span>
-            </div>
-            <div class="mui-ellipsis">
-              <span>CM1B1H1BA1641AR7TE08</span>
-            </div>
+          <img src="../../imgs/device_black.png">
+          <div class="info">
+            <p>汪德尔的私家云</p>
+            <span>CM1B1H1BA1641AR7TE08</span>
           </div>
         </div>
       </div>
     </div>
     <div class="user_share">
       <div class="share_ewm">
-        <img src="../../imgs/ewm.png" alt="">
+        <router-link to="/my/invide">
+          <img src="../../imgs/ewm.png" alt="">
+        </router-link>
         <p>扫一扫上面的二维码图案，分享设备</p>
-        <div class="share_button">
+        <div class="share_button" @click="shareFile">
           <i class="wechat icon-wechat"></i>
           分享给微信好友</div>
       </div>
     </div>
+    <div class="share_arrow" v-if="isShow" @click="shareFile">
+      <img src="../../imgs/share_arrow.png" alt="">
+    </div>
     <v-footer></v-footer>
   </section>
-
 </template>
 
 <script>
 
 // 引入顶部固定功能栏
-import Cheader from '../home/header.vue'
+import Cheader from '../common/header.vue'
 // 引入底部导航栏
-import Cfooter from '../home/footer.vue';
+import Cfooter from '../common/footer.vue';
 
 export default {
-  data: function(){
+  data: function() {
     return {
-      title: "我的"
+      title: "我的",
+      isShow: false
+    }
+  },
+  methods: {
+    shareFile: function() {
+      this.isShow = !this.isShow
     }
   },
   components: {
@@ -58,7 +64,9 @@ export default {
 <style lang="less" scoped>
 .user {
   width: 750px;
-  height: 1108px;
+  height: 1200px;
+  position: relative;
+  background-color: #fff;
   .user_info {
     position: relative;
     height: 600px;
@@ -70,41 +78,53 @@ export default {
       margin: 0 auto;
       border-radius: 50%;
       overflow: hidden;
+      i {
+        display: inline-block;
+        width: 90px;
+        height: 30px;
+        background: url("../../imgs/owner_tag.png") no-repeat;
+        position: absolute;
+        top: 165px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     .userName {
       text-align: center;
       color: #fff;
       font-size: 32px;
       margin-top: 19px;
-    }
-    i {
-      display: inline-block;
-      width: 90px;
-      height: 30px;
-      background: url("../../imgs/owner_tag.png") no-repeat;
-      position: absolute;
-      top: 165px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-bottom: 56px;
     }
     .share_box {
-
+      background-color: red;
       width: 460px;
       margin: 0 auto;
       margin-top: 36px;
       .box_info {
+        background-color: pink;
+        
         img {
           width: 72px;
           height: 72px;
-          margin: 14px;
+          margin: 0 0 17px 27px;
+          vertical-align: middle;
+          float: left;
         }
-        .title {
-          font-size: 32px;
-          color: #fff;
-        }
-        .mui-ellipsis {
-          font-size: 26px;
-          color: #fff;
+        .info {
+          margin-left: 20px;
+          margin-bottom: 20px;
+          width: 304px;
+          float: left;
+          p {
+            font-size: 32px;
+            color: #fff;
+            padding-bottom: 10px;
+          }
+          span {
+            font-size: 26px;
+            color: #fff;
+          }
         }
       }
     }
@@ -117,8 +137,7 @@ export default {
 
     .share_ewm {
       position: absolute;
-      top: -200px;
-      img {}
+      top: -220px;
       p {
         text-align: center;
         font-size: 28px;
@@ -136,6 +155,17 @@ export default {
         line-height: 100px;
         padding: 0 87px;
       }
+    }
+  }
+  .share_arrow {
+    width: 750px;
+    height: 1118px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 88px;
+    img {
+      float: right;
+      margin-right: 30px;
     }
   }
 }

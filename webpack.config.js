@@ -48,7 +48,16 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      {
+        test: /\.(png|jpg|gif|ttf|eot|ttf|woff|svg)$/,
+        use: [
+            // 大约小于10kb的图片变成base64编码继承到js中，比较大的图片仍然以url方式引入
+            { loader: 'url-loader', options: { limit: 1000000000 } }
+            // 'image-webpack-loader'
+        ]
+    }
+      
     ]
   },
   resolve: {

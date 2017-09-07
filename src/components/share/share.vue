@@ -16,7 +16,7 @@
     
 
     <!-- tab-container -->
-    <component :is="selectedTab"></component>
+    <component :is="selectedTab" id="v-file"></component>
     
         
     
@@ -27,13 +27,13 @@
 <script>
 
 // 引入顶部固定功能栏
-import Cheader from '../home/header.vue'
+import Cheader from '../common/header.vue'
 // 引入文件列表
 import Cfile from './share_file.vue'
 // 引入用户列表
 import Cuser from './share_user.vue'
 // 引入底部导航栏
-import Cfooter from '../home/footer.vue';
+import Cfooter from '../common/footer.vue';
 
 
 export default {
@@ -64,6 +64,7 @@ export default {
 <style lang="less" scoped>
 .share_list {
   background-color: #fff;
+  height: 1201px;
   .mint-navbar {
     width: 750px;
     height: 72px;

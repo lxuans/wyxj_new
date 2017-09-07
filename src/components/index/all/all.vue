@@ -1,22 +1,22 @@
 <template>
     <section class="all">
         <v-header :title="title"></v-header>
-        <div class="all_search">
-            <router-link to="/all/all_search">
+        <div class="all_search" v-if="isHide">
+            <router-link to="/search_history">
                 <button>
                     <i class="search icon-search"></i>
                     搜索
                 </button>
             </router-link>
         </div>
-        <div class="selectItem" v-show="true">
+        <div class="selectItem" v-show="isShow">
             <header class="mint-header">
                 <div class="mint-header-button is-left">
                     <button @click="checkNone" class="mint-button mint-button--default mint-button--normal">
                         <label class="mint-button-text">取消</label>
                     </button>
                 </div>
-                <h1 class="mint-header-title">已选择 1 项</h1>
+                <h1 class="mint-header-title">已选择 0 项</h1>
                 <div class="mint-header-button is-right">
                     <button @click="checkAll" class="mint-button mint-button--default mint-button--normal">
                         <label class="mint-button-text">全选</label>
@@ -32,80 +32,65 @@
         <div class="all_list">
             <ul class="all_list_view">
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_pink.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
+
                         <div class="mui-input-row mui-checkbox" id="chekbox">
                             <input name="checkbox1" value="Item 3" type="checkbox" :checked="checked" class="check">
                         </div>
                     </div>
                 </li>
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_pink.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
+
                         <div class="mui-input-row mui-checkbox" id="chekbox">
                             <input name="checkbox1" value="Item 3" type="checkbox" :checked="checked" class="check">
                         </div>
                     </div>
                 </li>
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_pink.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
+
                         <div class="mui-input-row mui-checkbox" id="chekbox">
                             <input name="checkbox1" value="Item 3" type="checkbox" :checked="checked" class="check">
                         </div>
                     </div>
                 </li>
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_pink.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
+
                         <div class="mui-input-row mui-checkbox" id="chekbox">
                             <input name="checkbox1" value="Item 3" type="checkbox" :checked="checked" class="check">
                         </div>
                     </div>
                 </li>
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_pink.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
+
                         <div class="mui-input-row mui-checkbox" id="chekbox">
                             <input name="checkbox1" value="Item 3" type="checkbox" :checked="checked" class="check">
                         </div>
@@ -118,8 +103,7 @@
 
 <script>
 
-// import Jquery from 'jquery';
-import Cheader from '../../home/header.vue';
+import Cheader from '../../common/header.vue';
 
 export default {
 
@@ -127,20 +111,20 @@ export default {
         return {
             title: "全部",
             isShow: false,
+            isHide: true,
             checked: "",
         }
     },
     methods: {
 
-
         checkAll: function() {
-            // let all = this.$el.querySelectorAll('.check')
-            // console.log(all)
             this.checked = true;
         },
 
         checkNone: function() {
             this.checked = false;
+            this.isHide = true;
+            this.isShow = false;
         },
 
 
@@ -148,18 +132,20 @@ export default {
     },
     mounted() {
         var check = this.$el.querySelectorAll('.check');
-        // console.log(check)
+        var _this = this;
         for (var i = 0; i < check.length; i++) {
             check[i].onchange = function() {
-                // console.log(check[i].checked)
-                if (this.checked === true) {
-                    this.isShow = true
-                    alert(this.checked)
-                    alert(this.isShow)
+                var that = this;
+                if (that.checked === true) {
+                    setTimeout(function() {
+                        // that.checked = true;
+                        _this.isHide = false;
+                        _this.isShow = true;
+                    }, 500)
                 }
             }
         }
-        
+
 
 
 
@@ -187,8 +173,6 @@ export default {
         height: 88px;
         border-radius: 30px;
         padding: 14px 30px; // margin: 0 auto;
-        border-radius: 30px;
-        background-color: #f7f7f7;
         button {
             width: 690px;
             height: 60px;
@@ -198,6 +182,8 @@ export default {
             color: #b3b3b3;
             text-align: center;
             line-height: 60px;
+            background-color: #f7f7f7;
+            padding: 0;
         }
     }
     .selectItem {
@@ -206,9 +192,6 @@ export default {
             height: 88px;
             background-color: #66a7ff;
             padding: 0 40px;
-            position: absolute;
-            top: 88px;
-            left: 0;
             .mint-button-text {
                 font-size: 32px;
             }
@@ -247,21 +230,27 @@ export default {
                     height: 100px;
                     margin: 20px 25px;
                     max-width: 100px;
+                    float: left;
                 }
                 .list_view_cell_item {
                     display: inline-block;
-                    width: 570px;
+                    float: left;
+                    width: 560px;
+                    height: 140px;
                     padding: 27px 30px 28px 0;
                     margin: 0;
                     color: inherit;
-                    border-bottom: 1px solid #ccc;
+                    border-bottom: 1px solid #eee;
                     position: relative;
-                    .title {
-                        font-size: 32px;
-                    }
+                    
                     .detail {
                         font-size: 24px;
                         color: #ccc;
+                        p {
+                            font-size: 32px;
+                            margin-top: 7px;
+                            margin-bottom: 30px
+                        }
                     }
                 }
             }

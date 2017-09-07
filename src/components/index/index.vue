@@ -37,10 +37,10 @@
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-                    <a href="#">
+                    <router-link to="/index/picture">
                         <span class="image icon-image" style="color:#7fcf8e"></span>
                         <div class="mui-media-body">图片</div>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
@@ -49,16 +49,16 @@
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-                    <a href="#">
+                    <router-link to="/index/music">
                         <span class="music_small icon-music_small" style="color:#ff88a5"></span>
                         <div class="mui-media-body">音乐</div>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-                    <a href="#">
+                    <router-link to="/index/doc">
                         <span class="document icon-document1" style="color:#86b9ff"></span>
                         <div class="mui-media-body">文档</div>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                     <a href="#">
@@ -114,9 +114,9 @@
 <script>
 
 // 引入顶部固定功能栏
-import Cheader from '../home/header.vue'
+import Cheader from '../common/header.vue'
 // 引入底部导航栏
-import Cfooter from '../home/footer.vue';
+import Cfooter from '../common/footer.vue';
 
 export default {
     data: () => {
@@ -145,6 +145,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
+@import url('../../iconfont/iconfont.css');
+
+
     .index {
         position: relative;
         .box_show {
@@ -272,6 +276,10 @@ export default {
                 }
             }
         }
+        .active {
+        border-bottom: 4px solid #66a7ff;
+        color: #66a7ff;
+    }
     }
 </style>
 

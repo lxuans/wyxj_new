@@ -38,7 +38,11 @@ export default {
     .mint-header {
         width: 750px;
         height: 88px;
+        font-size: 32px;
         background-color: #000;
+        .mint-button {
+            font-size: 24px;
+        }
     }
 }
 </style>

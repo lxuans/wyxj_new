@@ -6,155 +6,105 @@
                     <p>上拉加载更多</p>
                 </div>
                 <ul class="mui-table-view content">
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">
-                                    <span>01-24 12:05 | 32.56K</span>
-                                    <span>超级大懒猫</span>
-                                </div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class="new"></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">01-24 12:05 | 32.56K</div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class=""></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">01-24 12:05 | 32.56K</div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class=""></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">01-24 12:05 | 32.56K</div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class=""></i>
                         </div>
+                        <i class="new"></i>
                     </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">01-24 12:05 | 32.56K</div>
+                    <li class="list_view_cell">
+                        <img class="list_view_cell_look" src="../../imgs/device_blue.png">
+                        <div class="list_view_cell_item">
+                            <div class="detail">
+                                <p>IMG10165456498.jpg</p>
+                                <span>01-24 12:05 | 32.56K</span>
                             </div>
-                            <i class=""></i>
                         </div>
-                    </li>
-                    <li class="mui-table-view-cell mui-media">
-                        <div class="list_item">
-                            <img class="mui-media-object mui-pull-left" src="../../imgs/device_pink.png">
-                            <div class="mui-media-body">
-                                <div class="title">
-                                    <span>IMG10165456498.jpg</span>
-                                </div>
-                                <div class="mui-ellipsis">01-24 12:05 | 32.56K</div>
-                            </div>
-                            <i class=""></i>
-                        </div>
+                        <i class="new"></i>
                     </li>
                 </ul>
             </div>
@@ -169,7 +119,7 @@ import BScroll from 'better-scroll';
 export default {
     methods: {
         scroll() {
-           new BScroll('#file_wrapper',{})
+            new BScroll('#file_wrapper', {})
         }
     },
     mounted() {
@@ -190,42 +140,51 @@ export default {
     }
     .mui-table-view {
         width: 750px;
-        .mui-table-view-cell {
+        .list_view_cell {
             height: 140px;
-            padding: 35px 30px 34px 30px;
-            border-bottom: 1px solid #eee;
-            .list_item {
+            padding: 0;
+            position: relative;
+            .list_view_cell_look {
+                width: 100px;
+                height: 100px;
+                margin: 20px 25px;
+                max-width: 100px;
+                float: left;
+            }
+            .list_view_cell_item {
+                display: inline-block;
+                float: left;
+                width: 560px;
+                height: 140px;
+                padding: 27px 30px 28px 0;
                 margin: 0;
-                padding: 0;
                 color: inherit;
-                .mui-media-object {
-                    margin-top: 20px;
-                }
-                .title {
-                    font-size: 32px;
-                }
-                .mui-ellipsis {
+                border-bottom: 1px solid #eee;
+
+
+                .detail {
                     font-size: 24px;
                     color: #ccc;
-                    span:nth-of-type(2) {
-                        float: right;
+                    p {
+                        font-size: 32px;
+                        margin-top: 7px;
+                        margin-bottom: 30px
                     }
                 }
             }
+            .new {
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: red;
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+            }
         }
     }
-}
-
-.new {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
 }
 </style>
 

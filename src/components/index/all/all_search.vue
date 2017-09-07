@@ -3,50 +3,28 @@
         <v-header title="搜索"></v-header>
         <div class="search_box">
             <i class="search icon-search"></i>
-            <input type="text" placeholder="请输入关键字">
+            <input type="text" placeholder="超级马里奥">
             <input type="button" value="搜索">
         </div>
         <div class="total">共有个{{}}文件</div>
         <div class="search_list">
             <ul class="search_list_view">
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_blue.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
                         <i class="share icon-share"></i>
                     </div>
                 </li>
                 <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
+                    <img class="list_view_cell_look" src="../../../imgs/device_blue.png">
                     <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
-                        </div>
-                        <i class="share icon-share"></i>
-                    </div>
-                </li>
-                <li class="list_view_cell">
-                    <img class="list_view_cell_look mui-pull-left" src="../../../imgs/device_pink.png">
-                    <div class="list_view_cell_item">
-                        <div class="cell_item_body">
-                            <div class="title">
-                                <span>IMG10165456498.jpg</span>
-                            </div>
-                            <div class="detail">
-                                <span>01-24 12:05 | 32.56K</span>
-                            </div>
+                        <div class="detail">
+                            <p>IMG10165456498.jpg</p>
+                            <span>01-24 12:05 | 32.56K</span>
                         </div>
                         <i class="share icon-share"></i>
                     </div>
@@ -58,7 +36,7 @@
 
 <script>
 
-import Cheader from '../../home/header.vue'
+import Cheader from '../../common/header.vue'
 export default {
     data: function() {
         return {
@@ -127,21 +105,27 @@ export default {
                     height: 100px;
                     margin: 20px 25px;
                     max-width: 100px;
+                    float: left;
                 }
                 .list_view_cell_item {
                     display: inline-block;
-                    width: 570px;
+                    float: left;
+                    width: 560px;
+                    height: 140px;
                     padding: 27px 30px 28px 0;
                     margin: 0;
-                    color: inherit; 
-                    border-bottom: 1px solid #ccc;
+                    color: inherit;
+                    border-bottom: 1px solid #eee;
                     position: relative;
-                    .title {
-                        font-size: 32px;
-                    }
+
                     .detail {
                         font-size: 24px;
                         color: #ccc;
+                        p {
+                            font-size: 32px;
+                            margin-top: 7px;
+                            margin-bottom: 30px
+                        }
                     }
                 }
             }
